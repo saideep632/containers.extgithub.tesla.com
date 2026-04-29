@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Security Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0d1117;
+    color:white;
+}
+
+header{
+    background:#161b22;
+    padding:20px;
+    text-align:center;
+    font-size:30px;
+    font-weight:bold;
+    color:#58a6ff;
+    box-shadow:0 0 10px #000;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:30px 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#161b22;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(88,166,255,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 20px rgba(88,166,255,0.5);
+}
+
+.card h2{
+    color:#58a6ff;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#c9d1d9;
+    line-height:1.6;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 15px;
+    border:none;
+    background:#238636;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2ea043;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#161b22;
+    margin-top:30px;
+    color:#8b949e;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+Cyber Security Dashboard
+</header>
+
+<div class="container">
+
+<div class="card">
+<h2>Network Scan</h2>
+<p>Monitor network devices and check open ports in your lab environment.</p>
+<button onclick="alert('Use only on authorized systems')">Open</button>
+</div>
+
+<div class="card">
+<h2>Password Strength</h2>
+<p>Analyze passwords and improve account security practices.</p>
+<button onclick="alert('Strong passwords protect accounts')">Check</button>
+</div>
+
+<div class="card">
+<h2>Threat Logs</h2>
+<p>Review security logs and suspicious activity indicators.</p>
+<button onclick="alert('Log monitoring started')">View</button>
+</div>
+
+<div class="card">
+<h2>Learning Labs</h2>
+<p>Practice safely using OWASP Juice Shop and TryHackMe.</p>
+<button onclick="alert('Start your learning journey')">Start</button>
+</div>
+
+</div>
+
+<footer>
+Ethical Security Learning Project
+</footer>
+
+</body>
+</html>
